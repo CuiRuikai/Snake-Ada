@@ -9,7 +9,7 @@ package GUI is
 
    procedure Draw_Rectangle (Cr : Cairo_Context; Pos : Position);
 
-   function On_Key_Press   (Ent  : access GObject_Record'Class;    Event : Gdk_Event_Key)       return Boolean;
+   function On_Key_Press   (Ent  : access GObject_Record'Class   ; Event : Gdk_Event_Key)       return Boolean;
    function On_Draw        (Self : access Gtk_Widget_Record'Class; Cr    : Cairo.Cairo_Context) return Boolean;
    function TriggerRedraw                                                                       return Boolean;
 

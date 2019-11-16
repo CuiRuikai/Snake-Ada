@@ -7,16 +7,18 @@ package Control is
 
    type Direction is (Up,Down,Left,Right);
 
-   Snake_Length : Integer := 1;
+   Apple               : Position;
+   Snake               : array (1..100) of Position;
+   Snake_Length        : Integer                     := 1;
 
-   Apple : Position;
-   Snake : array (1..100) of Position;
-   Terminate_Indicator : Boolean := False;
-
-   function Generate_Position return Position;
+   Terminate_Indicator : Boolean                     := False;
 
    task type Game is
       entry Move_To (Dir : Direction);
    end Game;
+
+private
+
+   function Generate_Position return Position;
 
 end Control;
