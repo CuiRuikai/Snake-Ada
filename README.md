@@ -1,3 +1,5 @@
+<p align="center"><img src="https://github.com/CuiRuikai/Snake-Ada/blob/master/demo.gif" alt="demo"></p>
+
 # Snake-Ada
 This is a simple Snake implementation using Ada with GtkAda as the graphic library.
 
